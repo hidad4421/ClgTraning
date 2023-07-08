@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo_DivJS</title>   
+</head>
+<body>
+    <div id="divbg" style="height: 200px; width: 200px;">
+        Hello Student
+    </div>
+    <h1>It's Inline</h1>
+    <div class="inline">
+        <button onclick="alert('OOPS Alert')">Alert</button>
+        <button onclick="prompt('OOPS Prompt')">Prompt</button>
+        <button onclick="confirm('OOPS Confirm')">Confirm</button>
+    </div>
+    <hr>
+    <div class="internal">
+        <h1>It's Internal</h1>
+        <button onclick="demoInternalAlert()">Alert</button>
+        <button onclick="demoInternalPrompt()">Prompt</button>
+        <button onclick="demoInternalConfirm()">Confirm</button>
+    </div>
+    <hr>
+    <div class="external">
+        <h1>It's External</h1>
+        <button id="ab" onclick="demoExternalAlert()">Alert</button>
+        <button id="ef" onclick="demoExternalPrompt()">Prompt</button>
+        <button id="cd" onclick="demoExternalConfirm()">Confirm</button>
+    </div>
+    <hr>
+
+    <div class="divbgchange">
+        <h1>Div BG Change</h1>
+        <button id="dbggreen" onclick="demoDivGreen()">Div BG Green</button>
+        <button id="dbggray" onclick="demoDivGray()">Div BG Gray</button>
+    </div>
+
+    <div class="bodybgchange">
+        <h1>Body BG Change</h1>
+        <button id="bbggray" onclick="demoBodyGray()">Body BG Gray</button>
+        <button id="bbggreen" onclick="demoBodyGreen()">Body BG Green</button>
+    </div>
+
+    <div class="bodybgchange">
+        <h1>Prompt Input body & div BG Change</h1>
+        <button id="dbgp" onclick="demoDivPrompt()">Div BG Prompt</button>
+        <button id="bbgp" onclick="demoBodyPrompt()">Body BG Prompt</button>
+    </div>
+
+    <div class="inputbgchange">
+        <h1>Input body & div BG Change</h1>
+        <label for="favcolor">Select your favourite color for Div:</label>
+        <input type="color" id="CPD" name="favcolor" onchange="demoDivInput()" value="">
+        <label for="favcolor">Select your favourite color for Body:</label>
+        <input type="color" id="CPB" name="favcolor" onchange="demoBodyInput()" value="">
+    </div>
+    <script src="Custom.js"></script>
+</body>
+</html>

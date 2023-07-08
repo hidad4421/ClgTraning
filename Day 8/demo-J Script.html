@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Demo</title>
+</head>
+<body>
+    <h1>It's Inline</h1>
+    <div class="inline">
+        <button onclick="alert('OOPS Alert')">Alert</button>
+        <button onclick="prompt('OOPS Prompt')">Prompt</button>
+        <button onclick="confirm('OOPS Confirm')">Confirm</button>
+    </div>
+    <hr>
+    <div class="internal">
+        <h1>It's Internal</h1>
+        <button onclick="demoInternalAlert()">Alert</button>
+        <button onclick="demoInternalPrompt()">Prompt</button>
+        <button onclick="demoInternalConfirm()">Confirm</button>
+    </div>
+    <hr>
+    <div class="external">
+        <h1>It's External</h1>
+        <button id="ab" onclick="demoExternalAlert()">Alert</button>
+        <button id="ef" onclick="demoExternalPrompt()">Prompt</button>
+        <button id="cd" onclick="demoExternalConfirm()">Confirm</button>
+    </div>
+    <hr>
+    
+    <script>
+        function demoInternalAlert(){
+            alert("you want to Delete all the files?")
+        }
+        function demoInternalConfirm(){
+            if(confirm("Are you sure..??")){
+                alert("YESSS")
+            }
+            else{
+                alert("NOOOO")
+            }
+        }
+        function demoInternalPrompt(){
+            var fName=prompt("Enter Firstname Here..")
+            var lName=prompt("Enter Lastname Here..")
+            alert(fName+" "+lName)
+        }
+    </script>
+    <script src="Custom.js"></script>
+</body>
+</html>
